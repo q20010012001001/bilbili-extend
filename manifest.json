@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "bilbili, 视频倍速shift+1~9, 首页去除大屏, 首页换一换回溯",
+  "description": "bilbili, 视频倍速shift+1~9, 首页去除大屏, 首页换一换回溯",
+  "version": "1.0.0",
+  "icons": {
+    "128": "logo.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/feed-roll-history-btn.js", "scripts/clean-home-page.js"],
+      "matches": ["https://www.bilibili.com/*"],
+      "css": ["css/global.css", "css/feed-roll-history-btn.css", "css/clean-home-page.css"]
+    },
+    {
+      "js": ["scripts/stepless-video-rate.js"],
+      "matches": ["https://www.bilibili.com/video/*", "https://www.bilibili.com/list/*", "https://www.bilibili.com/bangumi/play/*"],
+      "css": ["css/global.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "settings/settings.html",
+    "default_icon": "logo.png"
+  },
+  "author": "findyulong@outlook.com"
+}
