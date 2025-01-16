@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "bilbili, 视频倍速shift+1~9, 首页去除大屏, 首页换一换回溯",
-  "description": "bilbili, 视频倍速shift+1~9, 首页去除大屏, 首页换一换回溯",
-  "version": "1.0.0",
+  "name": "Bilibili 功能扩展",
+  "description": "视频倍速shift+1~9,shift+~调节倍速0.5 首页去除大屏, 首页换一换回溯",
+  "version": "1.0.1",
   "icons": {
     "128": "logo.png"
   },
